@@ -7,15 +7,16 @@
   --color-secondary: #f6f5f4;
 }
 
-html {
-  border: 5px dashed #ff8d0a;
-  padding-bottom: 1.5em;
+body {
+  margin: 0;
+  background-color: var(--color-secondary);
 }
 
-body {
+main {
   font-family: "Recursive", sans-serif;
-  background-color: var(--color-secondary);
   margin: 0;
+  border: 5px dashed #ff8d0a;
+  padding-bottom: 1.5em;
 }
 
 .content {
@@ -217,6 +218,16 @@ button:hover {
   cursor: pointer;
 }
 
+footer {
+  text-align: center;
+  background-color: #f6f5f4;
+}
+
+footer a {
+  display: block;
+  padding: .5em;
+}
+
 @media only screen and (min-width: 768px) {
   main {
     font-size: 26px;
@@ -235,7 +246,7 @@ button:hover {
 
   .main-top-right {
     position: relative;
-    margin-left: 1em!important;
+    margin-left: 1em !important;
   }
 
   .main-top-right p {
@@ -245,7 +256,7 @@ button:hover {
   }
 
   .main-bottom {
-    font-size: 20px!important;
+    font-size: 20px !important;
   }
 
   article {
@@ -265,8 +276,9 @@ button:hover {
     margin-left: 1em;
   }
 
-  .experience-content, .skills {
-    padding: .5em 2em;
+  .experience-content,
+  .skills {
+    padding: 0.5em 2em;
   }
 
   .experience-skills article {
